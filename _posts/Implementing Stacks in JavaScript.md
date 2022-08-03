@@ -1,7 +1,7 @@
 ---
 date: '2022-07-05T13:47:01.690Z'
 title: Implementing Stacks in JavaScript
-tagline: Implementing Stacks in JavaScript
+tagline: # javascript # node # data structures
 preview: >-
   In today's article we are going to discuss about stack implementation in JavaScript. Stack is a linear data structure in which removing and adding of elements follows a unique order.
 image: >-

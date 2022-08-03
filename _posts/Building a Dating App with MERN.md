@@ -1,7 +1,7 @@
 ---
 date: "2021-09-28T11:50:54.000Z"
 title: Building a Dating App with MERN
-tagline: #express #react #beginners #webdev
+tagline: # express # react # beginners # webdev
 preview: >-
   we are going to build a dating app using mern stack, the web app has a simple functionality a screenshot of the finished app below, all the data comes from a MongoDB database, with Api endpoints set in Node.js
 image: >-
@@ -35,7 +35,7 @@ Next delete some of the files that you don't need.
 
 ![perez](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1z9fzfsn3fcone8vma4c.PNG)
 
-####Creating a Header Component
+#### Creating a Header Component
 
 Let's create a header component. First, you must install Material .since its going to provide for us the icons we are going to use
 
@@ -58,7 +58,7 @@ the header.css file contain the following content
 
 ![css](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h9dwdirvxbykc187ri5r.PNG)
 
-####Creating the Dating Cards Component
+#### Creating the Dating Cards Component
 Let’s now work on the second component. Create two files—DatingCards.js and 
 DatingCards.css—inside the components folder. Then include the DatingCards component in the App.js file.
 
@@ -81,7 +81,7 @@ person, use the imgUrl background image and display the name in the h3 tag.
 
 ![dating2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nune45e3nkx9lcrro84l.PNG)
 
-######Creating the Swipe Buttons Component
+###### Creating the Swipe Buttons Component
 
 Let’s now create the Swipe component, which are the buttons in the footer. 
 These buttons add to the app’s styling. They won’t be functional since it’s a simple app. 
@@ -101,7 +101,7 @@ Next, is styling the buttons and the code of styling them is here below
 
 we are now through with the frontend part ...
 
-####Initial Back-End Setup
+#### Initial Back-End Setup
 Let’s move to the back end by starting with the Node.js code.create another folder and name it api
 
 Next, create a package.json file by entering the `npm init -y` command in the terminal. 
@@ -123,7 +123,7 @@ instantaneously.
 npm i nodemon
 ```
 
-####Initial Route Setup
+#### Initial Route Setup
 
 Let’s create the initial route, which generally checks whether everything is set up 
 correctly. The Express package in Node.js allows you to create routes, which is how most 
@@ -149,12 +149,12 @@ const port = process.env.PORT || 5001
 app.listen(port, () => console.log(`Listening on localhost: ${port}`))
 ```
 
-####Database User and Network Access
+#### Database User and Network Access
 In MongoDB, you need to create a database user and provide network access.
 
 ![database](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lur5pkoovw14m309u6d8.PNG)
 
-####MongoDB Schema and Routes
+#### MongoDB Schema and Routes
 
 MongoDB stores data in a JSON format instead of the regular table structure found in a 
 traditional database like Oracle. You create the schema file required by MongoDB. It tells 
@@ -210,7 +210,7 @@ JSON object from MongoDB to read the body.
 ![index](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5v287oo1zfrohocsg8dn.PNG)
 
 
-####Integrating the backend  with the frontend 
+#### Integrating the backend  with the frontend 
 
 Let’s hook the back end to the front end. Use the axios package to call from the front 
 end. Axios is a JavaScript library that makes the API request to the REST endpoint. You 
