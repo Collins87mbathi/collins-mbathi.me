@@ -53,7 +53,8 @@ export default function Home() {
       <Head>
         <title>{data.name}</title>
         <link rel="shortcut icon" href="/images/collins-mbathi.png" />
-        <meta name="keywords" content="collins blog site"/>
+        <meta name="description" content="Hello 👋 Software Engineer  , Technical Writer and a Community Advocate"/>
+       
       </Head>
       {/* This button should not go into production */}
       {process.env.NODE_ENV === "development" && (
