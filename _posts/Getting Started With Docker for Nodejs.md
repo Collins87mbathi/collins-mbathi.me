@@ -5,7 +5,8 @@ tagline: # javascript # tutorial # node # docker
 preview: >-
  How many times have you built an application and it works perfectly on your local machine, but when you share it with someone else, it doesn't work on their machine, and you find yourself arguing, "But it works on my machine."
 image: >-
-  https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8erz6sztgw7s5pzqjta.png
+  https://res.cloudinary.com/practicaldev/image/fetch/s--7ftgnrES--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8erz6sztgw7s5pzqjta.png
+  
 ---
 
 ##Why Use Docker ?
