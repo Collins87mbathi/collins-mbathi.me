@@ -4,7 +4,8 @@ title: Blog site API with Authentication in Node, Express and MongoDB
 tagline: # express # react # beginners # webdev
 preview: >-
 we are going to build a Blog site Api which has User Authentication using express, node, and MongoDb, the API  has a simple functionality a since we are using express the framework of Node.js, and all the data comes from a MongoDB database, and the API endpoints are coming from Node.js
-image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kyox46e4lpjoryxftdi7.png
+image: >-
+ https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kyox46e4lpjoryxftdi7.png
 ---
 we are going to build a Blog site Api which has User Authentication using express, node, and MongoDb, the API  has a simple functionality a since we are using express the framework of Node.js, and all the data comes from a MongoDB database, and the API endpoints are coming from Node.js
 
