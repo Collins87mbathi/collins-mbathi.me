@@ -64,7 +64,7 @@ As you can see from the brief description of a drawing above,
 Containers run our applications as outlined by the Images .
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-###Dockerfiles and creating Images
+### Dockerfiles and creating Images
 To demonstrate, we will generate images with Nodejs.
 In the IDE of your choice, make a folder called example-docker.
 Check that `nodejs` is installed on your machine.
@@ -147,11 +147,11 @@ Our image is ready, now its time you run it in your terminal
 docker build -t "name of image"
 ```
 
-####Dockerignore file 
+#### Dockerignore file 
 
 If we have a node module file that we want to ignore in our folder, we can use the ignore command.`.dockerignorefile` .
 
-###Staring and Stopping Containers 
+### Staring and Stopping Containers 
 - Commands of controlling and image
 
 `docker images` - It provides a comprehensive list of images.
