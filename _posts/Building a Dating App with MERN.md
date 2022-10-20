@@ -3,119 +3,113 @@ date: "2021-09-28T11:50:54.000Z"
 title: Building a Dating App with MERN
 tagline: # express # react # beginners # webdev
 preview: >-
- We are going to build a dating app using the MERN stack, the web app has simple functionality a screenshot of the finished app below, all the data comes from a MongoDB database, with API endpoints set in Node.js .
+ We're going to build a dating app with the MERN stack; the web app has simple functionality (see below for a screenshot of the finished app); all data comes from a MongoDB database, with API endpoints set up in Node.js.
 image: >-
   https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z9kktscb2pvkb3l0c7mm.jpg
 ---
 
-We are going to build a dating app using the MERN stack, the web app has simple functionality a screenshot of the finished app below, all the data comes from a MongoDB database, with API endpoints set in Node.js .
+# Introduction
+
+We're going to build a dating app with the MERN stack; the web app has simple functionality (see below for a screenshot of the finished app); all data comes from a MongoDB database, with API endpoints set up in Node.js.
 ![cover](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aog9s34skeuj3nmyau41.PNG)
 
-Let’s review the React front end and then move to the back end. 
-Open your terminal and create a dating-app-mern folder. Inside it, use:-
- `create-react-app` to create a new app called dating-app-frontend. The following are the commands to do this.
+Let's start with the front end of React and then move on to the back end.
+Create a dating-app-mern folder in your terminal. Use the following inside it:
+To make a new app called dating-app-frontend, use `create-react-app`. The commands to accomplish this are as follows:
+
  ```JavaScript
 cd dating-app-mern
 npx create-react-app dating-app-frontend
 
 ```
-#### React Basic Setup
+### React Basic Setup
 
-Return to the React project and cd to the dating-app-frontend directory. Start the React 
-app with npm start.
+Return to the React project and navigate to the directory dating-app-frontend. npm start will launch the React app.
 
 ```JavaScript
 cd dating-app-frontend
 npm start
 
 ```
-Next, delete some of the files that you don't need.
+Next, remove any files that you no longer require.
 
 ![perez](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1z9fzfsn3fcone8vma4c.PNG)
 
-####Creating a Header Component
+#### Creating a Header Component
 
-Let's create a header component. First, you must install Material .since it's going to provide us with the icons we are going to use
+Let's start by making a header component. You must first install Material. because it will provide us with the icons we will use
 
 ```JavaScript
 npm i @material-ui/core @material-ui/icons
 ```
-Next, create a components folder inside the src folder. Create two files—Header. jsx and Header.CSS—inside the components folder. Header.js has two things: a person icon and a forum icon.
-The following is the Header.jsx file's content.
+Next, inside the src folder, make a components folder. Inside the components folder, create two files: Header.jsx and Header.CSS. There are two icons in header.js: a person icon and a forum icon.
+The following is the content of the Header.jsx file.
 
 ![article2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hsye32gzwjf3syvdf3ph.PNG)
 include the Header component in the App.js file
 ![article3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iilrav9uii5yydrwstc6.PNG)
 
-the header.css file contains the following content
+The following information is contained in the header.css file:
 
 ![css](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h9dwdirvxbykc187ri5r.PNG)
 
-####Creating the Dating Cards Component
-Let’s now work on the second component. Create two files—DatingCards.js and DatingCards.css—inside the components folder. Then include the DatingCards component in the App.js file.
-Before moving forward, you need to install a react-tinder-card package. This package has a feature that provides the swipe effect.
+#### Creating the Dating Cards Component
+
+Let's get started on the second component. Inside the components folder, create two files: DatingCards.js and DatingCards.css. Then, in the App.js file, include the DatingCards component.
+You must first install the react-tinder-card package before proceeding. This package includes a feature that generates the swipe effect.
 
 ```JavaScript
 npm i react-tinder-card
 ```
 
-Next, put the content in DatingCards.js. Here, inside a people state variable, you store the name and images of four people. Next, import DatingCard and use it as a component. 
-Here, you use the props mentioned in the react-tinder-card documentation.
-The swiped and outOfFrame functions are required. When looping through each person, use the imgUrl background image and display the name in the h3 tag.
+After that, paste the content into DatingCards.js. You store the names and images of four people inside a people state variable. Import DatingCard and use it as a component next.
+The props mentioned in the react-tinder-card documentation are used here.
+The functions swiped and outOfFrame are required. Use the imgUrl background image and display the name in the h3 tag when looping through each person.
 
 ![dating1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f5vaqypp3bsgnmvn96is.PNG)
 
 ![dating2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nune45e3nkx9lcrro84l.PNG)
 
-######Creating the Swipe Buttons Component
+###### Creating the Swipe Buttons Component
 
-Let’s now create the Swipe component, which is the button in the footer. 
-These buttons add to the app’s styling. They won’t be functional since it’s a simple app. 
-Create two files: Swipe.jsx and Swipe.css inside the components
-folder. You also need to include it in the App.js file.
+Let's now make the Swipe component, which is the footer button.
+These buttons complement the app's design. Because it is a simple app, they will not function.
+Inside the components folder, create two files: Swipe.jsx and Swipe.css. It must also be included in the App.js file.
 
-The content in Swiper.jsx
+Swiper.jsx contains content.
 
 ![dating](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8egnn6cpxzvynr0sehck.PNG)
 
-Next, is styling the buttons and the code for styling them is here below
+The following step is to style the buttons, and the code for doing so is provided below.
 
 ![dating2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pb570vuld5gosmwyieuv.PNG)
 
-we are now through with the frontend part .
+We have completed the frontend portion.
 
-####Initial Back-End Setup
-Let’s move to the back end by starting with the Node.js code. create another folder and name it API .
+#### Initial Back-End Setup
+Let's get started with the Node.js code on the back end. Make a new folder and call it API.
 
-Next, create a package.json file by entering the `npm init -y` command in the terminal. 
+Then, in the terminal, type `npm init -y` to create a package.json file.
 
-After that, You need to install two packages before starting. Open the terminal and install 
-Express and Mongoose in the API folder
+After that, you must install two packages before proceeding. Install Express and Mongoose in the API folder using the terminal.
 
 ```JavaScript
 npm i express mongoose
 ```
 
-after this open MongoDB and copy the link to link to our project.
+After that, launch MongoDB and copy the link to our project.
 
-Before moving forward, install the nodemon in the API folder. Whenever 
-you make any changes to the code in the index.js file, the Node server restarts 
-instantaneously.
+Install the nodemon in the API folder before proceeding. Any changes to the code in the index.js file cause the Node server to restart immediately.
 
 ```JavaScript
 npm i nodemon
 ```
 
-####Initial Route Setup
+#### Initial Route Setup
 
-Let’s create the initial route, which generally checks whether everything is set up 
-correctly. The Express package in Node.js allows you to create routes, which is how most 
-of the Internet works. Most back-end languages like Node.js and Java offer capabilities to 
-create these routes, which interact with the databases. The initial route doesn’t interact 
-with the database and simply returns a text when you go to it, using a GET request.
+Let's start with the first route, which checks to see if everything is in order. The Node.js Express package allows you to create routes, which is how the majority of the Internet works. Most back-end languages, such as Node.js and Java, provide the ability to create these routes that interact with databases. The first route does not interact with the database and simply returns a text when accessed via a GET request.
 
-Create an index.js file in the API folder. Here, you import the Express and Mongoose packages first. Next, use Express to create a port variable to run on 
-port 5001.
+In the API folder, create an index.js file. First, import the Express and Mongoose packages. Then, using Express, create a port variable that will run on port 5001.
 
 ```JavaScript
 const express = require('express');
@@ -131,22 +125,18 @@ const port = process.env.PORT || 5001
 app.listen(port, () => console.log(`Listening on localhost: ${port}`))
 ```
 
-####Database User and Network Access
-In MongoDB, you need to create a database user and provide network access.
+#### Database User and Network Access
+You must create a database user and grant network access in MongoDB.
 
 ![database](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lur5pkoovw14m309u6d8.PNG)
 
-####MongoDB Schema and Routes
+#### MongoDB Schema and Routes
 
-MongoDB stores data in a JSON format instead of the regular table structure found in a 
-traditional database like Oracle. You create the schema file required by MongoDB. It tells 
-you how fields are stored in MongoDB.
+MongoDB stores data in JSON format rather than the traditional table structure found in traditional databases such as Oracle. You create the schema file that MongoDB requires. It describes how fields in MongoDB are stored.
 
 
 
-Here, cards are considered a collection name, and you store a value like cardSchema in 
-the database. It consists of an object with a name and imgUrl keys. These are the names 
-that you use in MongoDB. Create a Cards.js file and put the following content in it.
+Cards are regarded as a collection name in this context, and a value such as cardSchema is stored in the database. It consists of a named object and imgUrl keys. These are the names used in MongoDB. Make a Cards.js file with the following content.
 
 
 ![database1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/raedhxjb2fnbsu3g2vwv.PNG)
@@ -155,55 +145,40 @@ that you use in MongoDB. Create a Cards.js file and put the following content in
 You now use the schema to create the endpoint that adds data to the database. The 
 MVC pattern is followed here; it is the traditional flow of a web application.
 
-Next, use a POST request that takes any data from the user and sends it to the 
-database. You can use any endpoint. For example, if you write an article on Dev.to 
-and hit the POST button, your article is saved in the Dev.to database once the POST 
-request is made.
-The GET endpoints fetch all the data from the database. Again, you can give any 
-endpoint. For example, when you browse through the posts in Dev.to, a GET request is 
-sent to the endpoint, which in turn fetches all posts from the Dev.to database.
+Then, use a POST request to send any data from the user to the database. Any endpoint can be used. If you write an article on Dev.to and then hit the POST button, your article is saved in the Dev.to database once the POST request is made.
+The GET endpoints retrieve all database data. Again, any endpoint can be specified. When you browse through the posts in Dev.to, for example, a GET request is sent to the endpoint, which retrieves all posts from the Dev.to database.
 
-Create a folder and name it routes in the routes folder create a file and call it Card.js In Card.js, create a POST request to the /dating/cards endpoint. The load is 
-in req.body to MongoDB. Then you use create() to send dbCard. If it’s a success, you 
-receive status 201; otherwise, you receive status 500. The updated content is marked in 
-bold.
-Next, create the GET endpoint to /dating/cards to get the data from the database. 
-You are using find() here and receive a status 200 on success (otherwise, status 500). 
+In the routes folder, make a folder called routes. Make a file called Card.js. Create a POST request to the /dating/cards endpoint in Card.js. The load is sent to MongoDB via req.body. Then you send dbCard using create(). If it is successful, you will be assigned status 201; otherwise, you will be assigned status 500. The new content is highlighted in bold.
+To get the data from the database, create a GET endpoint to /dating/cards.
+You're using find() here and getting a success code of 200. (otherwise, status 500).
 
 ![router](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ycgtvsz305iyya41915a.PNG)
 
-as you can see in the image I have used a router. to make work easier to connect it in the index.js
-To check the routes, let's use the postman app
+As you can see from the image, I used a router. Connect it in the index to make life easier. js
+Let's use the postman app to check the routes.
 
- Before moving forward with the POST request, you need to complete two things. 
-First, implement CORS; otherwise, you get cross-origin errors later when you deploy the 
-app.
+You must first complete two tasks before proceeding with the POST request.
+First, enable CORS; otherwise, when you deploy the app, you will encounter cross-origin errors.
 
-open the terminal and install CORS 
+Install CORS by opening the terminal.
 
 ```JavaScript
 npm i cors
 ```
-In index.js, import CORS and use it with app.use(). You also need to use the 
-express.json() middleware. It is required because you need it to parse the incoming 
-JSON object from MongoDB to read the body.
+Import CORS into index.js and use it with app.use (). You must also include the express.json() middleware. It is required because it is required to parse the incoming JSON object from MongoDB in order to read the body.
 
 
 ![index](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5v287oo1zfrohocsg8dn.PNG)
 
 
-####Integrating the backend  with the frontend 
+#### Integrating the backend  with the frontend 
 
-Let’s hook the back end to the front end. Use the Axios package to call from the front 
-end. Axios is a JavaScript library that makes the API request to the REST endpoint. You 
-just created two endpoints in the back end. To access them, you need Axios. Open the client 
-and install it.
+Let's connect the back and front ends. To call from the front end, use the Axios package. Axios is a JavaScript library that sends API requests to REST endpoints. You've just added two endpoints to the back end. Axios is required to access them. Install the client by opening it.
 
 ```JavaScript
 npm i Axios
 ```
-Next, create a new axios.js file, and then create an 
-instance of Axios. The URL is `http://localhost:5001`
+Then, create a new axios.js file and an instance of Axios. `http://localhost:5001` is the URL.
 
 
 
@@ -216,11 +191,10 @@ export default instance
 
 ```
 
-In DatingCards.js, get rid of the hard-coded stuff in the people's state. Then import 
-the local axios and use the useeffect hook to do the API call to the /dating/cards
-endpoint. Once you receive the data, reset it using the setPeople() function. 
+Remove the hard-coded information in the people's states from DatingCards.js. Then import the local axios and call the /dating/cards endpoint via the useEffect hook. When you receive the data, use the setPeople() function to reset it. 
 
 ```JavaScript
+
 import React, { useState, useEffect } from 'react'
 import DatingCard from 'react-tinder-card'
 import './DatingCards.css'
@@ -241,5 +215,5 @@ const DatingCards = () => {
 ```
 ![end](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/el1lhrbghri5rx6uxhql.PNG)
 
-We have completed our dating app project hope you enjoyed it and learned a lot.
-We will be talking about how to deploy the app in Heroku in our next article .
+We finished our dating app project, and I hope you enjoyed it and learned a lot.
+In our next article, we'll go over how to deploy the app on Heroku.
