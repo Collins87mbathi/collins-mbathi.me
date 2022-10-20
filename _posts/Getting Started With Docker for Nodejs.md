@@ -8,7 +8,7 @@ image: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--Vs2Zomu---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8erz6sztgw7s5pzqjta.png
 ---
 
-##Why Use Docker ?
+## Why Use Docker ?
 How many times have you built an application and it works perfectly on your local machine, but when you share it with someone else, it doesn't work on their machine, and you find yourself arguing, "But it works on my machine."
 These issues will no longer exist because Docker has come to the rescue.
 Docker is a container that contains everything our application requires.
@@ -17,7 +17,7 @@ Docker is a container that contains everything our application requires.
 2.The Requirements
 3.The Original Source Code
 
-###Introduction - What is Docker ? 
+### Introduction - What is Docker ? 
 Docker is an open platform for application development, shipping, and running. Docker allows you to decouple your applications from your infrastructure, allowing you to deliver software more quickly. Docker allows you to manage your infrastructure in the same way that you manage your applications. You can significantly reduce the time between writing code and running it in production by utilizing Docker's methodologies for quickly shipping, testing, and deploying code.
 
 ### Docker Features 
