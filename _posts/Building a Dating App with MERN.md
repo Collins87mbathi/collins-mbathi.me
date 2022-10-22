@@ -171,7 +171,7 @@ Import CORS into index.js and use it with app.use (). You must also include the 
 ![index](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5v287oo1zfrohocsg8dn.PNG)
 
 
-#### Integrating the backend  with the frontend 
+#### Bringing the Backend and the Frontend Together  
 
 Let's connect the back and front ends. To call from the front end, use the Axios package. Axios is a JavaScript library that sends API requests to REST endpoints. You've just added two endpoints to the back end. Axios is required to access them. Install the client by opening it.
 

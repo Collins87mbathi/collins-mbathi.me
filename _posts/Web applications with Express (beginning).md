@@ -11,7 +11,7 @@ image: >-
 
 Express is a lightweight and adaptable Node.js web application framework that offers a comprehensive set of features for developing web applications.
 
-## GETTING STARTED
+## Getting Started
 
 You must first create a directory, navigate to it in your shell, and then install Express with npm by running `npm install express —save`.
 

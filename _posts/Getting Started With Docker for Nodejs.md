@@ -8,7 +8,7 @@ image: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--Vs2Zomu---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8erz6sztgw7s5pzqjta.png
 ---
 
-## Why Use Docker ?
+## Why Do You Need Docker ?
 How many times have you built an application and it works perfectly on your local machine, but when you share it with someone else, it doesn't work on their machine, and you find yourself arguing, "But it works on my machine."
 These issues will no longer exist because Docker has come to the rescue.
 Docker is a container that contains everything our application requires.
@@ -17,7 +17,7 @@ Docker is a container that contains everything our application requires.
 2.The Requirements
 3.The Original Source Code
 
-### Introduction - What is Docker ? 
+### What Is Docker, and How Does It Work?  
 Docker is an open platform for application development, shipping, and running. Docker allows you to decouple your applications from your infrastructure, allowing you to deliver software more quickly. Docker allows you to manage your infrastructure in the same way that you manage your applications. You can significantly reduce the time between writing code and running it in production by utilizing Docker's methodologies for quickly shipping, testing, and deploying code.
 
 ### Docker Features 
@@ -40,7 +40,7 @@ We can deploy our code with less effort and time. Because Docker can be used in 
 7.**Security Management** - It enables us to save secrets into the swarm and then choose which services have access to which secrets.
 
 
-### How to install Docker 
+### How to Setup Docker 
 You can install Docker on your machine based on the operating system you are using. The link to download Docker for your machine based on the operating system is provided below: -
 
 [Docker Installation](https://docs.docker.com/get-started/)
@@ -64,7 +64,7 @@ As you can see from the brief description of a drawing above,
 Containers run our applications as outlined by the Images .
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-### Dockerfiles and creating Images
+### Dockerfiles and Image Creation
 To demonstrate, we will generate images with Nodejs.
 In the IDE of your choice, make a folder called example-docker.
 Check that `nodejs` is installed on your machine.
@@ -147,11 +147,11 @@ Our image is ready, now its time you run it in your terminal
 docker build -t "name of image"
 ```
 
-#### Dockerignore file 
+#### Including a Dockerignore File 
 
 If we have a node module file that we want to ignore in our folder, we can use the ignore command.`.dockerignorefile` .
 
-### Staring and Stopping Containers 
+### Containers That Start and Stop 
 - Commands of controlling and image
 
 `docker images` - It provides a comprehensive list of images.
@@ -165,3 +165,6 @@ If we have a node module file that we want to ignore in our folder, we can use t
 `docker start "container name"` - When we run this it runs the container without needing the Image
 
 I hope you enjoyed 🤗🤗 reading the article and learned a lot; in our next article, we will discuss **Managing images ,containers, and how to deploy images in Docker Hub**. Happy Coding 🎉🎉✨
+
+
+
