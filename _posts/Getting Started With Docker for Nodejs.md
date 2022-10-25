@@ -1,9 +1,9 @@
 ---
-date: "2022-10-20T16:47:17.655Z"
+date: '2022-10-20T16:47:17.655Z'
 title: Getting Started With Docker for Nodejs
-tagline: # javascript # tutorial # node # docker-
+tagline: # javascript # node # Docker #web Development
 preview: >-
-How many times have you built an application that works perfectly on your local machine, but when you share it with someone else, it doesn't work on their machine, and you find yourself arguing, "But it works on my machine."
+  How many times have you built an application that works perfectly on your local machine, but when you share it with someone else, it doesn't work on their machine, and you find yourself arguing, "But it works on my machine."
 image: >-
  https://res.cloudinary.com/practicaldev/image/fetch/s--Vs2Zomu---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8erz6sztgw7s5pzqjta.png
 ---
