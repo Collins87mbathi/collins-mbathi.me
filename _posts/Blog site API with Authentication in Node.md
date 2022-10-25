@@ -1,6 +1,6 @@
 ---
 date: "2021-10-11T13:47:17.655Z"
-title: Node, Express, and MongoDB blog API with authentication
+title: Blog API with Nodejs,Expressjs and Mongodb
 tagline: # express # react # beginners # webdev
 preview: >-
  This is a simple API for a blog. It includes authentication so that only the owner of the blog can create, edit, and delete posts. It uses Node, Express, and MongoDB.
