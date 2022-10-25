@@ -1,6 +1,6 @@
 ---
 date: "2021-09-28T11:50:54.000Z"
-title: Building a Dating App with MERN
+title: Building a Dating App with Mern
 tagline: # express # react # beginners # webdev
 preview: >-
  We're going to build a dating app with the MERN stack; the web app has simple functionality (see below for a screenshot of the finished app); all data comes from a MongoDB database, with API endpoints set up in Node.js.
@@ -12,6 +12,27 @@ image: >-
 
 We're going to build a dating app with the MERN stack; the web app has simple functionality (see below for a screenshot of the finished app); all data comes from a MongoDB database, with API endpoints set up in Node.js.
 ![cover](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aog9s34skeuj3nmyau41.PNG)
+In this article, we will build the front end of our dating app using React.js.
+
+React.js is a popular JavaScript library for building user interfaces. It is fast, efficient, and can be used to build complex and responsive user interfaces.
+for the Backend side, we will focus on building it using Node.js. We will use MongoDB to store users & messages, Express to build the API, ReactJs for the web app, and Socket.IO to enable real-time communication between users.
+
+In the following section, we will look at some of the prerequisites for this tutorial.
+
+# Prerequisites
+The following are required to complete this tutorial:
+
+- [Nodejs](https://nodejs.org/en/)  installed on your system.
+
+- [ Expressjs](https://expressjs.com/)  installed on your system.
+
+- [Reactjs](https://reactjs.com/)  installed on your system.
+
+- Sound knowledge of JavaScript ,Reactjs and Nodejs.
+
+In the following section, we will talk about the technologies we are going to use.
+
+# Overview
 
 Let's start with the front end of React and then move on to the back end.
 Create a dating-app-mern folder in your terminal. Use the following inside it:
@@ -133,9 +154,6 @@ You must create a database user and grant network access in MongoDB.
 #### MongoDB Schema and Routes
 
 MongoDB stores data in JSON format rather than the traditional table structure found in traditional databases such as Oracle. You create the schema file that MongoDB requires. It describes how fields in MongoDB are stored.
-
-
-
 Cards are regarded as a collection name in this context, and a value such as cardSchema is stored in the database. It consists of a named object and imgUrl keys. These are the names used in MongoDB. Make a Cards.js file with the following content.
 
 
@@ -171,7 +189,7 @@ Import CORS into index.js and use it with app.use (). You must also include the 
 ![index](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5v287oo1zfrohocsg8dn.PNG)
 
 
-#### Bringing the Backend and the Frontend Together  
+#### Bringing the Backend and the Frontend Together 
 
 Let's connect the back and front ends. To call from the front end, use the Axios package. Axios is a JavaScript library that sends API requests to REST endpoints. You've just added two endpoints to the back end. Axios is required to access them. Install the client by opening it.
 

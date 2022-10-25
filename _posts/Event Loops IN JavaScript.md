@@ -1,6 +1,6 @@
 ---
 date: '2021-08-20T11:50:54.000Z'
-title: Event Loops IN JavaScript
+title: Event Loops in Javascript
 tagline: # beginners # javascript # web
 preview: >-
   As most developers are aware, `Javascript` is single-threaded, which means that two JavaScript statements cannot be excluded at the same time.

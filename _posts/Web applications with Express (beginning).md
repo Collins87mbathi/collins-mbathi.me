@@ -1,18 +1,29 @@
 ---
 date: '2021-09-10T11:50:54.000Z'
-title: Web applications with Express (beginning)
+title: Web Applications with Express (Beginners)
 tagline: # javascript # node # express
 preview: >-
-  Express is a lightweight and adaptable Node.js web application framework that offers a comprehensive set of features for developing web applications.
+  Node.js is a runtime environment used for server-side JavaScript. Express.js is a web framework used for server-side JavaScript. It is built on top of Node.js.
 image: >-
-  https://res.cloudinary.com/practicaldev/image/fetch/s--7ftgnrES--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qal2md48u9ia9983319w.png
+ https://res.cloudinary.com/practicaldev/image/fetch/s--7ftgnrES--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qal2md48u9ia9983319w.png
 ---
 # Introduction
 
-Express is a lightweight and adaptable Node.js web application framework that offers a comprehensive set of features for developing web applications.
+Node.js is a runtime environment used for server-side JavaScript. Express.js is a web framework used for server-side JavaScript. It is built on top of Node.js.
+
+In this course, we will be building a simple CRUD web application using Express.js. CRUD stands for Create, Read, Update, Delete. 
+
+This course is for beginners. No prior knowledge of Node.js or Express.js is required.
+
+In the following section, we will look at some of the prerequisites for this tutorial.
+
+# Prerequisites
+The following are required to complete this tutorial:
+
+- [Node.js](https://nodejs.org/en/) installed on your system.
+- Sound knowledge of JavaScript and Nodejs.
 
 ## Getting Started
-
 You must first create a directory, navigate to it in your shell, and then install Express with npm by running `npm install express —save`.
 
 Make a file called index.js and add the following code to it, which will create an Express server and add one endpoint to it with the app.get method:
@@ -41,4 +52,5 @@ curl http://localhost:5000
 Hello World
 
 ```
+
 
