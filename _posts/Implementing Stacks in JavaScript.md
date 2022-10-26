@@ -58,26 +58,51 @@ As you can see in the preceding example, we created the body of a stack class, w
 1.**Push()** - This method is used to insert elements into an array.
 
 
-![push](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/99gz2xotqpjf21xwg3qz.PNG)
+```JavaScript
+ push(value) {
+     this.items.push(value);
+
+     return this
+    }
+```
 This method adds a value to the array of items.
 
 2.**Pop()** - This method is used to remove the array's top element.
 
+```JavaScript
+pop() {
 
-![pop](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nn08p45c3b09mwnv1zse.PNG)
-
+        if (this.items.length === 0 ) {
+            return console.log("empty stack");
+        } else {
+            return this.items.pop(); 
+        }
+    }
+```
 First, we check to see if the array has elements; if it doesn't, it will return underflow. The pop method will remove the element that was most recently added to the items array.
 
 3.**peek** - When called, this method returns the array's topmost element. The final component to be added.
-
-![peek](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/izc5ippz5p00h7momf7n.PNG)
+```JavaScript
+ peek () {
+        if(this.items.length === 0) {
+            console.log("you can't peek an empty array");
+        } else {
+            return this.items[this.items.length - 1];
+        }
+    }
+```
 
 As can be seen, it only returns the most recent value added to the stack, the topmost value, but it does not remove it..
 
 4. **isEmpty** - In a scenario where we are removing a value from the stack, we use this method to check if the stack is empty and confirm if it is. So that the methods are not executed when the stack contains no values.
 
-
-![empty](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o1ig5lskbe1olxe4z9ip.PNG)
+```JavaScript
+isempty() {
+        if(this.items.length === 0) {
+            console.log("the array is empty");
+        }
+    }
+```
 It returns true when the stack is empty, as shown above.
 
 5. **print()** - This is a useful method that returns all of the values in the stack.
@@ -95,9 +120,18 @@ print()
 ```
 
 Now that we've defined the stack class and its methods, let's put them to the test. As an example, consider the following:
+```JavaScript
+const mystack = new Stack();
 
-![print](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dl6if6c73eb38cf6pfy1.png)
- 
+mystack.push(2);
+mystack.push(4);
+mystack.push(3);
+
+console.log(mystack.print());
+console.log(mystack.peek());
+mystack.pop();
+console.log(mystack.print());
+```
 Now that we've finished implementing and testing our functionality, you can experiment with other application approaches to better understand the stack concept.
 
 Happy coding until my next article.
