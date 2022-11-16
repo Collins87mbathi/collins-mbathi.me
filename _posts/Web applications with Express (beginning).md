@@ -1,6 +1,6 @@
 ---
 date: '2021-09-10T11:50:54.000Z'
-title: Web Applications with Express (Beginners)
+title: Web Applications with Express (A Beginners Guide)
 tagline: # javascript # node # express
 preview: >-
   Node.js is a runtime environment used for server-side JavaScript. Express.js is a web framework used for server-side JavaScript. It is built on top of Node.js.
