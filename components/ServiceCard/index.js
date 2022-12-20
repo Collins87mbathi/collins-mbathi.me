@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {RoughNotation} from "react-rough-notation"
 import { useTheme } from "next-themes";
 
 const ServiceCard = ({ name, description }) => {
@@ -14,7 +15,17 @@ const ServiceCard = ({ name, description }) => {
         mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-slate-50"
       } hover:scale-105 cursor-pointer`}
     >
-      <h1 className="text-3xl">{name ? name : "Heading"}</h1>
+      <h1 className="text-3xl">
+      <RoughNotation
+             type="highlight"
+             show={true}
+             color="#00afef"
+             animationDelay={1400}
+             animationDuration={1200}
+             >
+        {name ? name : "Heading"}
+        </RoughNotation>
+        </h1>
       <p className="mt-5 opacity-40 text-xl">
         {description
           ? description

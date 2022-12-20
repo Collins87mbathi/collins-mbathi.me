@@ -1,4 +1,5 @@
 import React from "react";
+import {RoughNotation} from "react-rough-notation"
 
 const WorkCard = ({ img, name, description, onClick }) => {
     return (
@@ -17,7 +18,9 @@ const WorkCard = ({ img, name, description, onClick }) => {
                 ></img>
             </div>
             <h1 className="mt-5 text-3xl font-medium">
+          
                 {name ? name : "Project Name"}
+               
             </h1>
             <h2 className="text-xl opacity-50">
                 {description ? description : "Description"}
