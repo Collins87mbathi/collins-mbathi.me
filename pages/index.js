@@ -191,7 +191,7 @@ I have three years of experience writing JavaScript code, and I've created perso
 
 As a community supporter, I give talks and introduce newcomers to the world of technology, and I am a core leader at Google Developers Student Club.
 
-Here are a few technologies I've recently worked with:
+Here are a few technologies I've recently worked with: 
 
 <b className="text-blue-500">Figma</b>,
 <b className="text-blue-500">Sanity.io</b>,
